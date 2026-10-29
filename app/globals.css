@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Public Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Fraunces', ui-serif, Georgia, serif;
+
+  --color-pine-50: #f2f7f3;
+  --color-pine-100: #e0eee3;
+  --color-pine-200: #c2ddc9;
+  --color-pine-300: #97c2a3;
+  --color-pine-400: #67a178;
+  --color-pine-500: #458357;
+  --color-pine-600: #336844;
+  --color-pine-700: #2a5438;
+  --color-pine-800: #23432e;
+  --color-pine-900: #1d3827;
+  --color-pine-950: #0f1f16;
+
+  --color-gold-300: #eec987;
+  --color-gold-400: #e3b355;
+  --color-gold-500: #d9a441;
+  --color-gold-600: #bd8527;
+
+  --color-clay-500: #c4502f;
+  --color-clay-600: #a93f24;
+}
+
+html {
+  overflow-x: clip;
+  max-width: 100%;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: clip;
+  background: #fffdf8;
+  color: #1d2b21;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Rendered long-form content (posts, legal pages) */
+.content-body {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #33463a;
+  overflow-wrap: break-word;
+}
+.content-body p {
+  margin: 0 0 1.15em;
+}
+.content-body h2,
+.content-body h3,
+.content-body h4 {
+  font-family: var(--font-display);
+  color: var(--color-pine-900);
+  line-height: 1.25;
+  margin: 1.5em 0 0.55em;
+}
+.content-body h2 { font-size: 1.65rem; font-weight: 600; }
+.content-body h3 { font-size: 1.35rem; font-weight: 600; }
+.content-body h4 { font-size: 1.15rem; font-weight: 600; }
+.content-body a {
+  color: var(--color-pine-700);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.content-body ul {
+  list-style: disc;
+  padding-left: 1.4em;
+  margin: 0 0 1.15em;
+}
+.content-body li { margin-bottom: 0.35em; }
+.content-body img {
+  border-radius: 0.9rem;
+  margin: 1.25em 0;
+  width: 100%;
+  height: auto;
+}
